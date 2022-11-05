@@ -1,0 +1,43 @@
+{
+    "clothes": [
+        {
+            "id": "1",
+            "category": "outer",
+            "including": [{
+                "type": "coat",
+                "explane": "abc"
+            },
+            {
+                "type": "jacket",
+                "explane": "def"
+            }]
+        },
+        {
+            "id": "2",
+            "category": "top",
+            "including": [{
+                "type": "shirt",
+                "explane": "ghi"
+            },
+            {
+                "type": "tshirt",
+                "explane": "jkl"
+            }]
+        },
+        {
+            "id": "3",
+            "category": "bottom",
+            "including": [{
+                "type": "jean",
+                "explane": "ghi"
+            },
+            {
+                "type": "skirt",
+                "explane": "jkl"
+            }]
+        }
+    ],
+    "account": [
+        
+    ]
+}
