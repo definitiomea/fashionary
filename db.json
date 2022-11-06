@@ -5,7 +5,7 @@
             "category": "outer",
             "including": [{
                 "type": "coat",
-                "explane": "abc"
+                "explane": "abc <h1>CDE</h1>"
             },
             {
                 "type": "jacket",
