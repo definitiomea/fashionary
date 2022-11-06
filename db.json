@@ -3,40 +3,57 @@
         {
             "id": "1",
             "category": "outer",
-            "including": [{
-                "type": "coat",
-                "title": "1. 코트(Coat)",
-                "section1title": "(1) 코트란?",
-                "section1": "방한, 방수 또는 멋을 위해 피부의 \n가장 외부에 입는 것을 코트라 한다."
-            },
-            {
-                "type": "jacket",
-                "title": ""
-            }]
+            "including": [
+                {
+                    "type": "coat",
+                    "title": "1. 코트(Coat)",
+
+                    "section1_title": "(1) 코트란?",
+                    "section1": [
+                        "방한, 방수 또는 멋을 위해 피부의 가장 외부에 입는 것을 코트라 한다.",
+                        "① 방한용(오버 코트: Over Coat) 소재: 모피, 피혁, 모직, 패딩(퀄팅)",
+                        "② 방수용(레인 코트: Rain Coat) 소재: 방수 가공한 코튼, 울, 나일론, 코팅 천"
+                    ],
+
+                    "section2_title": "(2) 코트의 역사",
+                    "section2": [
+                        "① 서양: 로마 시대 군인들이 착용한 망토 형식",
+                        "② 서아시아: 동물의 털을 보온용으로 몸에 걸친 것"
+                    ]
+                },
+                {
+                    "type": "jacket",
+                    "title": ""
+                }
+            ]
         },
         {
             "id": "2",
             "category": "top",
-            "including": [{
-                "type": "shirt",
-                "title": ""
-            },
-            {
-                "type": "tshirt",
-                "title": ""
-            }]
+            "including": [
+                {
+                    "type": "shirt",
+                    "title": ""
+                },
+                {
+                    "type": "tshirt",
+                    "title": ""
+                }
+            ]
         },
         {
             "id": "3",
             "category": "bottom",
-            "including": [{
-                "type": "jean",
-                "title": ""
-            },
-            {
-                "type": "skirt",
-                "title": ""
-            }]
+            "including": [
+                {
+                    "type": "jean",
+                    "title": ""
+                },
+                {
+                    "type": "skirt",
+                    "title": ""
+                }
+            ]
         }
     ],
     "account": [
