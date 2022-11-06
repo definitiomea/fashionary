@@ -1,10 +1,20 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+
+import Slider from "react-slick";
 
 const CategoryDetail = () => {
     let { id } = useParams();
     
     const [clothes, setClothes] = useState(null);
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      };
 
     const getClothes = async () => {
         let url = `http://localhost:5000/clothes/${id}`
@@ -20,12 +30,13 @@ const CategoryDetail = () => {
     return (
         <>
             <h1>Category Detail Here</h1>
-            {clothes && clothes?.including.map((item) => (
-                <div>
-                    <h3>{item && item.type}</h3>
-                </div>
-            ))}
-            {/* {clothes && clothes?.including.map((item) => (
+            <Slider {...settings}>
+                {clothes && clothes?.including.map((item) => (
+                    <div>
+                        <h3>{item && item.type}</h3>
+                    </div>
+                ))}
+                {/* {clothes && clothes?.including.map((item) => (
                 <div>
                     <h3>{item && item.type}</h3>
                     <p>{item && item.section1_title}</p>
@@ -47,7 +58,8 @@ const CategoryDetail = () => {
                         ))}
                     </ol>
                 </div>
-            ))} */}
+                ))} */}
+            </Slider>
         </>
     );
 }
