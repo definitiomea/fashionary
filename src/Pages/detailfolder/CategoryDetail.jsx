@@ -21,7 +21,9 @@ const CategoryDetail = () => {
         <>
             <h1>Category Detail Here</h1>
             {clothes?.including.map((item) => (
-                <li>{item?.type}</li>
+                <li>{item?.type}
+                    <p>{item?.explane}</p>
+                </li>
             ))}
         </>
     );
