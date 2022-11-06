@@ -33,7 +33,9 @@ const CategoryDetail = () => {
             <Slider {...settings}>
                 {clothes && clothes?.including.map((item) => (
                     <div>
-                        <h3>{item && item.type}</h3>
+                        <div className="notice-type">
+                            <h3>{item && item.type}</h3>
+                        </div>
                     </div>
                 ))}
                 {/* {clothes && clothes?.including.map((item) => (
