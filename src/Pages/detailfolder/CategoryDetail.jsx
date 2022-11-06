@@ -26,16 +26,34 @@ const CategoryDetail = () => {
         <>
             <h1>Category Detail Here</h1>
             {clothes && clothes?.including.map((item) => (
-                <li>{item && item?.type}
-                    
-                </li>
+                <div>
+                    <h3>{item && item.type}</h3>
+                    <p>{item && item.section1_title}</p>
+                    <ol>
+                        {item?.section1.map((list) => (
+                            <li>{item && list}</li>
+                        ))}
+                    </ol>
+                    <p>{item && item.section2_title}</p>
+                    <ol>
+                        {item?.section2.map((list) => (
+                            <li>{item && list}</li>
+                        ))}
+                    </ol>
+                    <p>{item && item.section3_title}</p>
+                    <ol>
+                        {item?.section3.map((list) => (
+                            <li>{item && list}</li>
+                        ))}
+                    </ol>
+                </div>
             ))}
             {/* {clothes && clothes?.including.map((item) => (
                 <li>{item && item?.type}
                     
                 </li>
             ))} */}
-            <hr></hr>
+            {/* <hr></hr>
             <h3>{clothes?.including[0]?.title && clothes?.including[0]?.title}</h3>
             <p>{clothes?.including[0]?.section1_title && clothes?.including[0]?.section1_title}</p>
             <ol>
@@ -66,7 +84,7 @@ const CategoryDetail = () => {
                 <li>{clothes?.including[0]?.section3[10] && clothes?.including[0]?.section3[10]}</li>
                 <li>{clothes?.including[0]?.section3[11] && clothes?.including[0]?.section3[11]}</li>
                 <li>{clothes?.including[0]?.section3[12] && clothes?.including[0]?.section3[12]}</li>
-            </ol>
+            </ol> */}
         </>
     );
 }
