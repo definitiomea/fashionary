@@ -13,10 +13,10 @@ const CategoryDetail = () => {
         setClothes(data);
     }
 
-    const testText = () => {
+    /* const testText = () => {
         console.log(clothes?.including);
         console.log(clothes?.including[0].section1[0]);
-    }
+    } */
 
     useEffect(() => {
         getClothes();
@@ -32,14 +32,41 @@ const CategoryDetail = () => {
             ))}
             {/* {clothes && clothes?.including.map((item) => (
                 <li>{item && item?.type}
-                    {item && item?.section1.map((text) => (
-                        <p>{text}</p>
-                    ))}
+                    
                 </li>
             ))} */}
-            {/* <p>{clothes && clothes?.including.section1[0]}</p> */}
-            <button onClick={() => {testText()}}>TEST</button>
-            <p>{clothes?.including[0].section1[0]}</p>
+            <hr></hr>
+            <h3>{clothes?.including[0]?.title && clothes?.including[0]?.title}</h3>
+            <p>{clothes?.including[0]?.section1_title && clothes?.including[0]?.section1_title}</p>
+            <ol>
+                <li>{clothes?.including[0]?.section1[0] && clothes?.including[0]?.section1[0]}</li>
+                <li>{clothes?.including[0]?.section1[1] && clothes?.including[0]?.section1[1]}</li>
+                <li>{clothes?.including[0]?.section1[2] && clothes?.including[0]?.section1[2]}</li>
+            </ol>
+            <p>{clothes?.including[0]?.section2_title && clothes?.including[0]?.section2_title}</p>
+            <ol>
+                <li>{clothes?.including[0]?.section2[0] && clothes?.including[0]?.section2[0]}</li>
+                <li>{clothes?.including[0]?.section2[1] && clothes?.including[0]?.section2[1]}</li>
+            </ol>
+            <p>{clothes?.including[0]?.section3_title && clothes?.including[0]?.section3_title}</p>
+            <ol>
+                <li>{clothes?.including[0]?.section3[0] && clothes?.including[0]?.section3[0]}</li>
+                <li>{clothes?.including[0]?.section3[1] && clothes?.including[0]?.section3[1]}</li>
+                <li>{clothes?.including[0]?.section3[2] && clothes?.including[0]?.section3[2]}</li>
+                <li>{clothes?.including[0]?.section3[3] && clothes?.including[0]?.section3[3]}</li>
+                <li>{clothes?.including[0]?.section3[4] && clothes?.including[0]?.section3[4]}</li>
+                <li>{clothes?.including[0]?.section3[5] && clothes?.including[0]?.section3[5]}</li>
+                <li>{clothes?.including[0]?.section3[6] && clothes?.including[0]?.section3[6]}</li>
+                
+            </ol>
+            <ol>
+                <li>{clothes?.including[0]?.section3[7] && clothes?.including[0]?.section3[7]}</li>
+                <li>{clothes?.including[0]?.section3[8] && clothes?.including[0]?.section3[8]}</li>
+                <li>{clothes?.including[0]?.section3[9] && clothes?.including[0]?.section3[9]}</li>
+                <li>{clothes?.including[0]?.section3[10] && clothes?.including[0]?.section3[10]}</li>
+                <li>{clothes?.including[0]?.section3[11] && clothes?.including[0]?.section3[11]}</li>
+                <li>{clothes?.including[0]?.section3[12] && clothes?.including[0]?.section3[12]}</li>
+            </ol>
         </>
     );
 }
