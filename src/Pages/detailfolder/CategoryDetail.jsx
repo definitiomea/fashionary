@@ -13,6 +13,11 @@ const CategoryDetail = () => {
         setClothes(data);
     }
 
+    const testText = () => {
+        console.log(clothes?.including);
+        console.log(clothes?.including[0].section1[0]);
+    }
+
     useEffect(() => {
         getClothes();
     },[clothes]);
@@ -20,11 +25,21 @@ const CategoryDetail = () => {
     return (
         <>
             <h1>Category Detail Here</h1>
-            {clothes?.including.map((item) => (
-                <li>{item?.type}
-                    {/* <p>{item?.explane}</p> */}
+            {clothes && clothes?.including.map((item) => (
+                <li>{item && item?.type}
+                    
                 </li>
             ))}
+            {/* {clothes && clothes?.including.map((item) => (
+                <li>{item && item?.type}
+                    {item && item?.section1.map((text) => (
+                        <p>{text}</p>
+                    ))}
+                </li>
+            ))} */}
+            {/* <p>{clothes && clothes?.including.section1[0]}</p> */}
+            <button onClick={() => {testText()}}>TEST</button>
+            <p>{clothes?.including[0].section1[0]}</p>
         </>
     );
 }
