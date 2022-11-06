@@ -5,11 +5,11 @@
             "category": "outer",
             "including": [{
                 "type": "coat",
-                "explane": "abc <h1>CDE</h1>"
+                "title": "1. 코트(Coat)"
             },
             {
                 "type": "jacket",
-                "explane": "def"
+                "title": ""
             }]
         },
         {
@@ -17,11 +17,11 @@
             "category": "top",
             "including": [{
                 "type": "shirt",
-                "explane": "ghi"
+                "title": ""
             },
             {
                 "type": "tshirt",
-                "explane": "jkl"
+                "title": ""
             }]
         },
         {
@@ -29,11 +29,11 @@
             "category": "bottom",
             "including": [{
                 "type": "jean",
-                "explane": "ghi"
+                "title": ""
             },
             {
                 "type": "skirt",
-                "explane": "jkl"
+                "title": ""
             }]
         }
     ],
