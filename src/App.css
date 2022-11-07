@@ -6,13 +6,23 @@
 }
 
 @font-face {
-    font-family: MyCoco;
+    font-family: myCoco;
     src: url(./Sources/Font/Coco-Sharp-Extrabold-Italic-trial.ttf);
 }
 
 @font-face {
     font-family: myCocogoose;
     src: url(./Sources/Font/Cocogoose-Classic-Medium-trial.ttf);
+}
+
+@font-face {
+    font-family: myNanumSquareNeoBold;
+    src: url(./Sources/Font/NanumSquareNeo-cBd.ttf);
+}
+
+@font-face {
+    font-family: myNanumSquareNeoRegular;
+    src: url(./Sources/Font/NanumSquareNeo-bRg.ttf);
 }
 
 .home-logo {
@@ -38,7 +48,7 @@
     justify-content: flex-end;
     margin: 0px;
     font-family: myCocogoose;
-    border-bottom: 2px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
 }
 .act-list li {
     margin: 5px;
@@ -62,5 +72,17 @@
 }
 
 .home-intro {
-    font-family: MyCoco;
+    font-family: myCoco;
+}
+.outlet {
+    font-family: myLemonMilk, myNanumSquareNeoBold;
+}
+.loginarea {
+    font-family: myNanumSquareNeoRegular;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    font-family: myNanumSquareNeoRegular;
+    margin-top: 10%;
 }

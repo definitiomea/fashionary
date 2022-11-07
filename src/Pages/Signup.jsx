@@ -1,7 +1,19 @@
+import { Container, Row, Col } from "react-bootstrap";
+
 const Signup = () => {
     return (
         <>
-            <h1>Sign up here</h1>
+            <main>
+                <article>
+                    <section>
+                        <Container>
+                            <div className="outlet">
+                                <h1>SIGN UP HERE</h1>
+                            </div>
+                        </Container>
+                    </section>
+                </article>
+            </main>
         </>
     );
 }

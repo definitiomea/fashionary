@@ -6,7 +6,9 @@ const Footer = ({authenticate, setAuthenticate}) => {
             <Container>
                 <Row>
                     <Col>
-                        <p>footer</p>        
+                        <div className="footer">
+                            <p>footer</p>
+                        </div>
                     </Col>
                 </Row>
             </Container>

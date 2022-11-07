@@ -1,7 +1,19 @@
+import { Container, Row, Col } from "react-bootstrap";
+
 const PatternMain = () => {
     return (
         <>
-            <h1>Pattern Main here</h1>
+            <main>
+                <article>
+                    <section>
+                        <Container>
+                            <div className="outlet">
+                                <h1>PATTERN MAIN HERE</h1>
+                            </div>
+                        </Container>
+                    </section>
+                </article>
+            </main>
         </>
     );
 }

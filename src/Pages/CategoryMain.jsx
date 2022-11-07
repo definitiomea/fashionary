@@ -39,11 +39,13 @@ const CategoryMain = () => {
             <Container>
                 <Row>
                     <Col>
-                        <h1>Category Main Here</h1>
-                        <DropdownButton id="dropdown-basic-button" title="Choose Category Here">
-                            {category && dropToMove()}
-                        </DropdownButton>
-                        <Outlet></Outlet>
+                        <div className="outlet">
+                            <h1>Category Main Here</h1>
+                            <DropdownButton id="dropdown-basic-button" title="Choose Category Here">
+                                {category && dropToMove()}
+                            </DropdownButton>
+                            <Outlet></Outlet>
+                        </div>
                     </Col>
                 </Row>
             </Container>
