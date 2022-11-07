@@ -100,6 +100,7 @@
     height: 400px;
     background-image: url(./Sources/Img/outline_girl2_40.jpg);
     background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
     font-family: myLemonMilk;
 }
