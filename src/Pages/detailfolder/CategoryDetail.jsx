@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
+import PrevArrow from "../../Modules/PrevArrow";
+import NextArrow from "../../Modules/NextArrow";
+
 import Slider from "react-slick";
 
 const CategoryDetail = () => {
@@ -13,7 +16,9 @@ const CategoryDetail = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        prevArrow: <PrevArrow />,
+        nextArrow: <NextArrow />
       };
 
     const getClothes = async () => {

@@ -29,3 +29,7 @@
     text-decoration: none;
     color:black;
 }
+.notice-type {
+    display: flex;
+    justify-content: center;
+}
