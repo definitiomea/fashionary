@@ -25,6 +25,11 @@
     src: url(./Sources/Font/NanumSquareNeo-bRg.ttf);
 }
 
+@font-face {
+    font-family: myVogue;
+    src: url(./Sources/Font/Vogue.ttf);
+}
+
 .home-logo {
     display: flex;
     justify-content: center;
@@ -39,6 +44,7 @@
     background-color: rgba(0, 0, 0, 0.555);
     overflow: hidden;
     transition: 0.5s;
+    z-index: 100;
 }
 .from-side-menu button {
     border: none;
@@ -103,12 +109,12 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    font-family: myLemonMilk;
+    font-family: myVogue;
 }
 .visualsub {
     position: absolute;
-    bottom: 10%;
-    left: 8%;
+    bottom: 5%;
+    left: 7%;
 }
 .loginarea {
     font-family: myNanumSquareNeoRegular;
