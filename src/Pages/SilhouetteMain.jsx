@@ -1,4 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
+/* import silhouette from '../Sources/Img/' */
 
 const SilhouetteMain = () => {
     return (
@@ -6,6 +7,7 @@ const SilhouetteMain = () => {
             <main>
                 <article>
                     <section>
+                        <img src="" alt="" />
                         <Container>
                             <div className="outlet">
                                 <h1>Silhoutte Main here</h1>
