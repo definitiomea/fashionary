@@ -40,7 +40,7 @@ const NavbarMade = ({authenticate, setAuthenticate}) => {
             <div className='menu-area'>
                 <span>
                     <button className='index-btn' onClick={() => {setWidth("100%")}}>
-                        <FontAwesomeIcon icon={faBookOpen}></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faBookOpen}></FontAwesomeIcon> INDEX
                     </button>
                 </span>
                 <ul className='menu-list'>
