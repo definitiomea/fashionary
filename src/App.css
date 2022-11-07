@@ -96,6 +96,13 @@
 .outlet {
     font-family: myLemonMilk, myNanumSquareNeoBold;
 }
+.silsubvisual {
+    height: 400px;
+    background-image: url(./Sources/Img/outline_girl2_40.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: myLemonMilk;
+}
 .loginarea {
     font-family: myNanumSquareNeoRegular;
 }
