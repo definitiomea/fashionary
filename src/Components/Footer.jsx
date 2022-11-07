@@ -1,7 +1,15 @@
+import { Container, Row, Col } from "react-bootstrap";
+
 const Footer = ({authenticate, setAuthenticate}) => {
     return (
         <footer>
-            <p>footer</p>
+            <Container>
+                <Row>
+                    <Col>
+                        <p>footer</p>        
+                    </Col>
+                </Row>
+            </Container>
         </footer>
     );
 }

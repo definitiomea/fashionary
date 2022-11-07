@@ -1,7 +1,19 @@
+import { Container, Row, Col } from "react-bootstrap";
+
 const Home = () => {
     return (
         <>
-            <h1>HOME</h1>
+            <main>
+                <article>
+                    <section>
+                        <Container>
+                            <div className="home-intro">
+                                <h1>WHAT IS FASHIONARY?</h1>
+                            </div>
+                        </Container>
+                    </section>
+                </article>
+            </main>
         </>
     );
 }

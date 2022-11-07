@@ -38,21 +38,21 @@ const UserMade = ({authenticate ,setAuthenticate}) => {
                 {/* 이제 이걸 드랍 다운, 혹은 text area로 바꿔주면 될 것 같다. */}
                 <li className='search' key="search">
                 <FontAwesomeIcon icon={faMagnifyingGlass}></FontAwesomeIcon>
-                <input type="text" placeholder='Search' className='search-area' onKeyPress={(e) => search(e)}></input>
+                <input type="text" placeholder='SEARCH' className='search-area' onKeyPress={(e) => search(e)}></input>
                 </li>
 
                 {/* 두 메뉴는 각각 페이지로 보내주기, onClick */}
                 {authenticate == true ?
                 <li className='logout' key="logout" onClick={goLogout}>
-                <FontAwesomeIcon icon={faUser}></FontAwesomeIcon> Logout</li> :
+                <FontAwesomeIcon icon={faUser}></FontAwesomeIcon> LOGOUT</li> :
                 <li className='login' key="login" onClick={goLogin}>
-                <FontAwesomeIcon icon={faUser}></FontAwesomeIcon> Login</li>                            
+                <FontAwesomeIcon icon={faUser}></FontAwesomeIcon> LOGIN</li>                            
                 }
                 {authenticate == true ?
                 <li className='signup' key="signup" onClick={goMyPage}>
-                <FontAwesomeIcon icon={faHandshake}></FontAwesomeIcon> My Page</li> :
+                <FontAwesomeIcon icon={faHandshake}></FontAwesomeIcon> MY PAGE</li> :
                 <li className='signup' key="signup" onClick={goSignup}>
-                <FontAwesomeIcon icon={faHandshake}></FontAwesomeIcon> Sign up</li>
+                <FontAwesomeIcon icon={faHandshake}></FontAwesomeIcon> SIGN UP</li>
                 }
             </ul>
         </>

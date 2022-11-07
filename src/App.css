@@ -10,6 +10,11 @@
     src: url(./Sources/Font/Coco-Sharp-Extrabold-Italic-trial.ttf);
 }
 
+@font-face {
+    font-family: myCocogoose;
+    src: url(./Sources/Font/Cocogoose-Classic-Medium-trial.ttf);
+}
+
 .home-logo {
     display: flex;
     justify-content: center;
@@ -21,6 +26,7 @@
     display: flex;
     justify-content: center;
     margin: 0px;
+    font-family: myLemonMilk;
 }
 .menu-list li {
     margin: 5px;
@@ -31,9 +37,19 @@
     display: flex;
     justify-content: flex-end;
     margin: 0px;
+    font-family: myCocogoose;
+    border-bottom: 2px solid lightgrey;
 }
 .act-list li {
     margin: 5px;
+}
+
+/* .search {
+    border-bottom: 1px solid lightgrey;
+} */
+
+.search-area {
+    border: 0px;
 }
 
 .menubox {
@@ -43,4 +59,8 @@
 .notice-type {
     display: flex;
     justify-content: center;
+}
+
+.home-intro {
+    font-family: MyCoco;
 }
