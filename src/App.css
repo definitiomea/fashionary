@@ -1,8 +1,19 @@
 /* init */
 
+@font-face {
+    font-family: myLemonMilk;
+    src: url(./Sources/Font/LEMONMILK-Medium.otf);
+}
+
+@font-face {
+    font-family: MyCoco;
+    src: url(./Sources/Font/Coco-Sharp-Extrabold-Italic-trial.ttf);
+}
+
 .home-logo {
     display: flex;
     justify-content: center;
+    font-family: myLemonMilk;
 }
 .menu-list {
     list-style-type: none;

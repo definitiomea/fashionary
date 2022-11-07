@@ -11,7 +11,7 @@ const HeaderMade = () => {
         <>
             <header>
                 <div className='home-logo' onClick={goHome}>
-                    <h1>fashionary</h1>
+                    <h1>FASHIONARY</h1>
                 </div>
             </header>
         </>
