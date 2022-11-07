@@ -1,16 +1,17 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass, faUser } from '@fortawesome/free-solid-svg-icons'
-import { faHandshake } from '@fortawesome/free-regular-svg-icons'
+import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
 import { Navigate, useNavigate } from 'react-router-dom';
 
 import { Dropdown } from 'react-bootstrap';
 
-import MenuTest from './MenuTest';
 import { Link } from 'react-router-dom';
 
+import { useState } from 'react';
+
 const NavbarMade = ({authenticate, setAuthenticate}) => {
-    const navigate = useNavigate();
+    let [width, setWidth] = useState(0);
+    let navigate = useNavigate();
 
     const allMenu = () => {
         const menuArray = []
@@ -30,6 +31,11 @@ const NavbarMade = ({authenticate, setAuthenticate}) => {
 
     return (
         <>
+            <div className='to-side-menu' style={{width: width}}>
+                <button className='closebtn' onClick={() => {setWidth(0)}}>
+                    <FontAwesomeIcon icon={faXmark}></FontAwesomeIcon>
+                </button>
+            </div>
             <div className='menu-area'>
                 <ul className='menu-list'>
                     {allMenu()}
