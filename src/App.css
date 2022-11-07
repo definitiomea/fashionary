@@ -30,6 +30,24 @@
     justify-content: center;
     font-family: myLemonMilk;
 }
+.from-side-menu {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.555);
+    overflow: hidden;
+    transition: 0.5s;
+}
+.from-side-menu button {
+    border: none;
+    background-color: transparent;
+}
+.index-btn {
+    border: none;
+    background-color: transparent;
+}
 .menu-list {
     list-style-type: none;
     padding-inline-start: 0px;
