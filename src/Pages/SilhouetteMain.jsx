@@ -7,7 +7,7 @@ const SilhouetteMain = () => {
                 <article>
                     <section>
                         <div className="silsubvisual">
-                            <h1>SILHOUTTE</h1>
+                            <h1 className="visualsub">SILHOUTTE</h1>
                         </div>
                         <Container>
                             <div className="outlet">

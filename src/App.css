@@ -97,12 +97,18 @@
     font-family: myLemonMilk, myNanumSquareNeoBold;
 }
 .silsubvisual {
+    position: relative;
     height: 400px;
     background-image: url(./Sources/Img/outline_girl2_40.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     font-family: myLemonMilk;
+}
+.visualsub {
+    position: absolute;
+    bottom: 10%;
+    left: 8%;
 }
 .loginarea {
     font-family: myNanumSquareNeoRegular;
