@@ -41,13 +41,11 @@ const NavbarMade = ({authenticate, setAuthenticate}) => {
     return (
         <>
             <div className='from-side-menu' style={{ width: width }}>
-                <div>
-                    <button className='close-btn' onClick={() => {setWidth(0)}}>
-                        <FontAwesomeIcon icon={faXmark}></FontAwesomeIcon>
-                    </button>
-                    <div className='vertical-area'>
-                        {verticalMenu()}
-                    </div>
+                <button className='close-btn' onClick={() => {setWidth(0)}}>
+                    <FontAwesomeIcon icon={faXmark}></FontAwesomeIcon>
+                </button>
+                <div className='vertical-area'>
+                    {verticalMenu()}
                 </div>
             </div>
             <div className='menu-area'>

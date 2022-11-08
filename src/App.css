@@ -47,8 +47,25 @@
     z-index: 100;
 }
 .from-side-menu button {
+    position: absolute;
+    top: 5%;
+    left: 3%;
     border: none;
     background-color: transparent;
+}
+.from-side-menu .vertical-area{
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    font-family: myLemonMilk;
+}
+.vertical-box {
+    text-decoration: none;
+    color: lightgrey;
+    transition: 0.5s;
+}
+.vertical-box:hover {
+    color: white;
 }
 .index-btn {
     border: none;
