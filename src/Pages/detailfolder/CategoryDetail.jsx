@@ -35,14 +35,14 @@ const CategoryDetail = () => {
     return (
         <>
             <Slider {...settings}>
-                {clothes && clothes?.including.map((item) => (
+                {/* {clothes && clothes?.including.map((item) => (
                     <div>
                         <div className="notice-type">
                             <h3>{item && item.type}</h3>
                         </div>
                     </div>
-                ))}
-                {/* {clothes && clothes?.including.map((item) => (
+                ))} */}
+                {clothes && clothes?.including.map((item) => (
                 <div className="contents-article">
                     <h3>{item && item.type}</h3>
                     <p>{item && item.section1_title}</p>
@@ -64,7 +64,7 @@ const CategoryDetail = () => {
                         ))}
                     </ol>
                 </div>
-                ))} */}
+                ))}
             </Slider>
         </>
     );

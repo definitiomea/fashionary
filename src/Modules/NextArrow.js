@@ -1,10 +1,14 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAnglesRight } from '@fortawesome/free-solid-svg-icons'
+
 function NextArrow(props) {
     const { className, style, onClick } = props;
     return (
-        <div
+      <FontAwesomeIcon 
+        icon={faAnglesRight}
         className={className}
-        style={{ ...style, display: "block", background: "red" }}
         onClick={onClick}
+        style={{...style, color:"#000000", transform: "scale(1.4, 1.4)"}}
         />
     );
 }
