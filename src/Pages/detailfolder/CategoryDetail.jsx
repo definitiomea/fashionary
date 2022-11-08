@@ -43,22 +43,22 @@ const CategoryDetail = () => {
                     </div>
                 ))}
                 {/* {clothes && clothes?.including.map((item) => (
-                <div>
+                <div className="contents-article">
                     <h3>{item && item.type}</h3>
                     <p>{item && item.section1_title}</p>
-                    <ol>
+                    <ol className="cat-section1">
                         {item?.section1.map((list) => (
                             <li>{item && list}</li>
                         ))}
                     </ol>
                     <p>{item && item.section2_title}</p>
-                    <ol>
+                    <ol className="cat-section2">
                         {item?.section2.map((list) => (
                             <li>{item && list}</li>
                         ))}
                     </ol>
                     <p>{item && item.section3_title}</p>
-                    <ol>
+                    <ol className="cat-section3">
                         {item?.section3.map((list) => (
                             <li>{item && list}</li>
                         ))}
