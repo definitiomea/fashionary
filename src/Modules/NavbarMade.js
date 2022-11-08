@@ -16,7 +16,7 @@ const NavbarMade = ({authenticate, setAuthenticate}) => {
     const allMenu = () => {
         const menuArray = []
         const menulist = {
-            silhouette: "Silhouette & Line",
+            silhouette: "Silhouette",
             pattern: "Pattern",
             fabric: "Fabric",
             category: "Category of Clothes",
@@ -35,17 +35,15 @@ const NavbarMade = ({authenticate, setAuthenticate}) => {
                 <button className='close-btn' onClick={() => {setWidth(0)}}>
                     <FontAwesomeIcon icon={faXmark}></FontAwesomeIcon>
                 </button>
-                <p>test</p>
+                <p>TEST</p>
             </div>
             <div className='menu-area'>
-                <span>
-                    <button className='index-btn' onClick={() => {setWidth("100%")}}>
-                        <FontAwesomeIcon icon={faBookOpen}></FontAwesomeIcon> INDEX
-                    </button>
-                </span>
                 <ul className='menu-list'>
                     {allMenu()}
                 </ul>
+                <button className='index-btn hide' onClick={() => {setWidth("100%")}}>
+                    <FontAwesomeIcon icon={faBookOpen}></FontAwesomeIcon> INDEX
+                </button>
             </div>
         </>
     );
