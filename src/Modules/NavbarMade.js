@@ -23,20 +23,32 @@ const NavbarMade = ({authenticate, setAuthenticate}) => {
     }
 
     const horizonMenu = () => {
-        const horizon = []
+        const horizon = [];
         for(const prop in menulist) {
-            horizon.push(<li><Link to={`/${prop}`} className="menubox">{menulist[prop]}</Link></li>)
+            horizon.push(<li><Link to={`/${prop}`} className="menubox">{menulist[prop]}</Link></li>);
         }
         return horizon;
+    }
+
+    const verticalMenu = () => {
+        const vertical = [];
+        for(const prop in menulist) {
+            vertical.push(<><h1><Link to={`/${prop}`} className="vertical-box" onClick={() => {setWidth(0)}}>{menulist[prop]}</Link></h1><br></br></>);
+        }
+        return vertical;
     }
 
     return (
         <>
             <div className='from-side-menu' style={{ width: width }}>
-                <button className='close-btn' onClick={() => {setWidth(0)}}>
-                    <FontAwesomeIcon icon={faXmark}></FontAwesomeIcon>
-                </button>
-                <p>TEST</p>
+                <div>
+                    <button className='close-btn' onClick={() => {setWidth(0)}}>
+                        <FontAwesomeIcon icon={faXmark}></FontAwesomeIcon>
+                    </button>
+                    <div className='vertical-area'>
+                        {verticalMenu()}
+                    </div>
+                </div>
             </div>
             <div className='menu-area'>
                 <ul className='menu-list'>
