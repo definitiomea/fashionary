@@ -34,7 +34,6 @@ const CategoryDetail = () => {
 
     return (
         <>
-            <h1>Category Detail Here</h1>
             <Slider {...settings}>
                 {clothes && clothes?.including.map((item) => (
                     <div>

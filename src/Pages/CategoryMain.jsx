@@ -36,19 +36,30 @@ const CategoryMain = () => {
 
     return (
         <>
-            <Container>
-                <Row>
-                    <Col>
-                        <div className="outlet">
-                            <h1>Category Main Here</h1>
-                            <DropdownButton id="dropdown-basic-button" title="Choose Category Here">
-                                {category && dropToMove()}
-                            </DropdownButton>
-                            <Outlet></Outlet>
+            <main>
+                <article>
+                    <section>
+                        <div className="catsubvisual">
+                            <h1 className="visualsub">CATEGORY</h1>
                         </div>
-                    </Col>
-                </Row>
-            </Container>
+                        <Container>
+                            <Row>
+                                <Col>
+                                    <div className="outlet">
+                                        <div className="dropcontain">
+                                            <DropdownButton id="dropdown-basic-button" title="Choose Category Here">
+                                                {category && dropToMove()}
+                                            </DropdownButton>
+                                        </div>
+                                        <Outlet></Outlet>
+                                    </div>
+                                </Col>
+                            </Row>
+                        </Container>
+                    </section>
+                </article>
+            </main>
+            
         </>
     );
 }

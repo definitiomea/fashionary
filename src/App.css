@@ -104,8 +104,50 @@
 }
 .silsubvisual {
     position: relative;
-    height: 400px;
+    height: 300px;
+    margin-bottom: 5%;
     background-image: url(./Sources/Img/outline_girl2_40.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: myVogue;
+}
+.patsubvisual {
+    position: relative;
+    height: 300px;
+    margin-bottom: 5%;
+    background-image: url(./Sources/Img/abstract-g834409429_1920.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: myVogue;
+}
+.patsubvisual {
+    position: relative;
+    height: 300px;
+    margin-bottom: 5%;
+    background-image: url(./Sources/Img/abstract-g834409429_1920.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: myVogue;
+}
+.fabsubvisual {
+    position: relative;
+    height: 300px;
+    margin-bottom: 5%;
+    background-image: url(./Sources/Img/vector-fabric-swatches.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: myVogue;
+    color: whitesmoke;
+}
+.catsubvisual {
+    position: relative;
+    height: 300px;
+    margin-bottom: 5%;
+    background-image: url(./Sources/Img/24Z_2105.w015.n001.414B.p15.414.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -115,6 +157,12 @@
     position: absolute;
     bottom: 5%;
     left: 7%;
+    transform: scale(1.4, 1.4);
+}
+.dropcontain {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
 }
 .loginarea {
     font-family: myNanumSquareNeoRegular;
