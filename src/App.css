@@ -116,6 +116,16 @@
 .outlet {
     font-family: myLemonMilk, myNanumSquareNeoBold;
 }
+.homesubvisual {
+    position: relative;
+    height: 300px;
+    margin-bottom: 5%;
+    background-image: url(./Sources/Img/coffee-g2139d0d06_1920.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: myVogue;
+}
 .silsubvisual {
     position: relative;
     height: 300px;

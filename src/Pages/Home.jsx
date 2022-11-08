@@ -6,9 +6,12 @@ const Home = () => {
             <main>
                 <article>
                     <section>
+                        <div className="homesubvisual">
+                            <h1 className="visualsub">HOME</h1>
+                        </div>
                         <Container>
-                            <div className="home-intro">
-                                <h1>WHAT IS FASHIONARY?</h1>
+                            <div className="outlet">
+                                <h1>MAYBE SLICK HERE</h1>
                             </div>
                         </Container>
                     </section>

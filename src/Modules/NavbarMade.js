@@ -13,20 +13,21 @@ const NavbarMade = ({authenticate, setAuthenticate}) => {
     let [width, setWidth] = useState(0);
     let navigate = useNavigate();
 
-    const allMenu = () => {
-        const menuArray = []
-        const menulist = {
-            silhouette: "Silhouette",
-            pattern: "Pattern",
-            fabric: "Fabric",
-            category: "Category of Clothes",
-            brands: "Brands",
-            personal: "Personal Color"
-        }
+    const menulist = {
+        silhouette: "Silhouette",
+        pattern: "Pattern",
+        fabric: "Fabric",
+        category: "Category of Clothes",
+        brands: "Brands",
+        personal: "Personal Color"
+    }
+
+    const horizonMenu = () => {
+        const horizon = []
         for(const prop in menulist) {
-            menuArray.push(<li><Link to={`/${prop}`} className="menubox">{menulist[prop]}</Link></li>)
+            horizon.push(<li><Link to={`/${prop}`} className="menubox">{menulist[prop]}</Link></li>)
         }
-        return menuArray;
+        return horizon;
     }
 
     return (
@@ -39,7 +40,7 @@ const NavbarMade = ({authenticate, setAuthenticate}) => {
             </div>
             <div className='menu-area'>
                 <ul className='menu-list'>
-                    {allMenu()}
+                    {horizonMenu()}
                 </ul>
                 <button className='index-btn hide' onClick={() => {setWidth("100%")}}>
                     <FontAwesomeIcon icon={faBookOpen}></FontAwesomeIcon> INDEX
