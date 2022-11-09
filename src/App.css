@@ -34,6 +34,7 @@
     display: flex;
     justify-content: center;
     font-family: myLemonMilk;
+    cursor: pointer;
 }
 .from-side-menu {
     height: 100%;
@@ -71,7 +72,7 @@
     border: none;
     background-color: transparent;
     font-family: myLemonMilk;
-    margin-left: 13px;
+    margin-bottom: 3%;
 }
 .hide {
     display: none;
@@ -82,6 +83,7 @@
     display: flex;
     justify-content: center;
     margin: 0px;
+    margin-bottom: 2%;
     font-family: myLemonMilk;
 }
 .menu-list li {
@@ -98,6 +100,15 @@
 }
 .act-list li {
     margin: 5px;
+}
+.act-list .login {
+    cursor: pointer;
+}
+.act-list .signup {
+    cursor: pointer;
+}
+.act-list .logout {
+    cursor: pointer;
 }
 
 /* .search {
@@ -121,6 +132,7 @@
 .menubox {
     text-decoration: none;
     color:black;
+    transition: 0.5s;
 }
 .notice-type {
     display: flex;

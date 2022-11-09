@@ -5,6 +5,7 @@ import PrevArrow from "../../Modules/PrevArrow";
 import NextArrow from "../../Modules/NextArrow";
 
 import Slider from "react-slick";
+import { useCallback } from "react";
 
 const CategoryDetail = () => {
     let { id } = useParams();
@@ -21,16 +22,16 @@ const CategoryDetail = () => {
         nextArrow: <NextArrow />
       };
 
-    const getClothes = async () => {
+    const getClothes = useCallback(async () => {
         let url = `http://localhost:5000/clothes/${id}`
         let response = await fetch(url);
         let data = await response.json();
         setClothes(data);
-    }
+    }, [id])
 
     useEffect(() => {
         getClothes();
-    },[clothes]);
+    },[getClothes]);
 
     return (
         <>
