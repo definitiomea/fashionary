@@ -8,7 +8,7 @@ function NextArrow(props) {
         icon={faAnglesRight}
         className={className}
         onClick={onClick}
-        style={{...style, color:"#000000", transform: "scale(1.4, 1.4)"}}
+        style={{...style, color:"#000000", right: "-6%", transform: "scale(1.4, 1.4)"}}
         />
     );
 }

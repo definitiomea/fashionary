@@ -240,6 +240,9 @@
     background-color: rgba(255, 248, 220, 0.514);
     border: 1px solid lightgrey;
     padding: 3%;
+    position: relative;
+    margin: auto;
+    overflow: auto;
 }
 
 .cat-section1 {
