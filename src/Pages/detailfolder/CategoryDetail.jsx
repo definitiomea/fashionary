@@ -66,6 +66,9 @@ const CategoryDetail = () => {
                     {item.section4 ? (
                         <p>있음</p>
                     ) : ""}
+                    {item.section5 ? (
+                        <p>있음</p>
+                    ) : ""}
                 </div>
                 ))}
             </Slider>
