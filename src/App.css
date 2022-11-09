@@ -36,6 +36,30 @@
 .paint-red {
     color: red;
 }
+.header-img1 {
+    height: 300px;
+    margin-bottom: 5%;
+    background-image: url(./Sources/Img/par22836-teaser-story-big.jpg);
+    background-size: cover;
+    background-position: center 32%;
+    background-repeat: no-repeat;
+}
+.header-img2 {
+    height: 300px;
+    margin-bottom: 5%;
+    background-image: url(./Sources/Img/par22836-teaser-story-big.jpg);
+    background-size: cover;
+    background-position: center 32%;
+    background-repeat: no-repeat;
+}
+.header-img3 {
+    height: 300px;
+    margin-bottom: 5%;
+    background-image: url(./Sources/Img/par22836-teaser-story-big.jpg);
+    background-size: cover;
+    background-position: center 32%;
+    background-repeat: no-repeat;
+}
 .home-logo {
     display: flex;
     justify-content: center;
@@ -73,6 +97,11 @@
     border: none;
     background-color: transparent;
     transform: scale(1.4, 1.4);
+    color:rgba(255, 248, 220, 0.514);
+    transition: 0.5s;
+}
+.from-side-menu button:hover {
+    color: whitesmoke;
 }
 .from-side-menu .vertical-area{
     position: absolute;
@@ -279,6 +308,7 @@
 
 .footer-container {
     background-color: rgba(0, 0, 0, 0.716);
+    margin-top: 5%;
 }
 .footer {
     margin-top: 7%;
