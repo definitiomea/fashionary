@@ -74,7 +74,7 @@
     margin-left: 13px;
 }
 .hide {
-    visibility: hidden;
+    display: none;
 }
 .menu-list {
     list-style-type: none;
@@ -111,7 +111,7 @@
 /* 마무리 하고 적용해주기 */
 @media screen and (max-width: 63rem) {
     .hide {
-        visibility:visible;
+        display: block;
     }
     .menu-list {
         display: none;
