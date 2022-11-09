@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBookOpen, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faBook, faXmark } from '@fortawesome/free-solid-svg-icons'
 
 import { Navigate, useNavigate } from 'react-router-dom';
 
@@ -53,7 +53,7 @@ const NavbarMade = ({authenticate, setAuthenticate}) => {
                     {horizonMenu()}
                 </ul>
                 <button className='index-btn hide' onClick={() => {setWidth("100%")}}>
-                    <FontAwesomeIcon icon={faBookOpen}></FontAwesomeIcon> INDEX
+                    <FontAwesomeIcon icon={faBook}></FontAwesomeIcon> INDEX
                 </button>
             </div>
         </>

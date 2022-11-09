@@ -30,12 +30,31 @@
     src: url(./Sources/Font/Vogue.ttf);
 }
 
+/* .home-area {
+    position: relative;
+} */
+.paint-red {
+    color: red;
+}
 .home-logo {
     display: flex;
     justify-content: center;
     font-family: myLemonMilk;
     cursor: pointer;
+    position: relative;
 }
+/* .home-title {
+    z-index: 10;
+    position: relative;
+}
+.home-book {
+    position: absolute;
+    left: 50%;
+}
+.home-hanger {
+    position: absolute;
+    left: 50%;
+} */
 .from-side-menu {
     height: 100%;
     width: 100%;
@@ -258,8 +277,12 @@
     padding-inline-start: 0px;
 }
 
+.footer-container {
+    background-color: rgba(0, 0, 0, 0.716);
+}
 .footer {
-    margin-top: 10%;
+    margin-top: 7%;
+    margin-bottom: 3%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
