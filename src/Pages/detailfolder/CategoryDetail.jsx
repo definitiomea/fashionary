@@ -63,6 +63,9 @@ const CategoryDetail = () => {
                             <li>{item && list}</li>
                         ))}
                     </ol>
+                    {item.section4 ? (
+                        <p>있음</p>
+                    ) : ""}
                 </div>
                 ))}
             </Slider>
