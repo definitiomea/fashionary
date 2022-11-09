@@ -53,6 +53,7 @@
     left: 3%;
     border: none;
     background-color: transparent;
+    transform: scale(1.4, 1.4);
 }
 .from-side-menu .vertical-area{
     position: absolute;
@@ -72,7 +73,8 @@
     border: none;
     background-color: transparent;
     font-family: myLemonMilk;
-    margin-bottom: 3%;
+    margin-top: 7%;
+    /* margin-bottom: 3%; */
 }
 .hide {
     display: none;
@@ -83,6 +85,7 @@
     display: flex;
     justify-content: center;
     margin: 0px;
+    margin-top: 4%;
     margin-bottom: 2%;
     font-family: myLemonMilk;
 }
