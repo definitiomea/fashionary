@@ -27,7 +27,6 @@ const SilhouetteDetail = () => {
             let response = await fetch(url);
             let data = await response.json();
             setShape(data);
-            console.log(shape);
         }
         getShape();
     },[id]);
