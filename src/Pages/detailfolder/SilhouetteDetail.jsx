@@ -44,7 +44,7 @@ const SilhouetteDetail = () => {
                 ))} */}
                 {shape && shape?.including.map((item) => (
                 <div className="contents-article">
-                    <h3>{item && item.shape}</h3>
+                    <h3>{shape.shape}</h3>
                     {item.checklist_title ? (<p>{item.checklist_title}</p>) : ""}
                     {item.checklist ? (
                         <ol className="sil-section1">
