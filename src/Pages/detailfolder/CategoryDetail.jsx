@@ -22,16 +22,15 @@ const CategoryDetail = () => {
         nextArrow: <NextArrow />
       };
 
-    const getClothes = useCallback(async () => {
-        let url = `http://localhost:5000/clothes/${id}`
-        let response = await fetch(url);
-        let data = await response.json();
-        setClothes(data);
-    }, [id])
-
     useEffect(() => {
+        const getClothes = async () => {
+            let url = `http://localhost:5000/clothes/${id}`
+            let response = await fetch(url);
+            let data = await response.json();
+            setClothes(data);
+        }
         getClothes();
-    },[getClothes]);
+    },[id]);
 
     return (
         <>
