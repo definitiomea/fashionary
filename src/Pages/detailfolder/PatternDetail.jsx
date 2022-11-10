@@ -47,7 +47,7 @@ const PatternDetail = () => {
                                 </ol>
                             ) : ""}
                             {item.explane_img_1 ? (
-                                <img src={require(`../../Sources/Img/${item.explane_img_1}`)} style={{maxWidth: "10%"}}></img>
+                                <img src={require(`../../Sources/Img/${item.explane_img_1}`)} style={{maxWidth: "20%"}}></img>
                             ) : ""}
                             {item.section2_title ? (<p>{item.section2_title}</p>) : ""}
                             {item.section2 ? (
@@ -58,7 +58,7 @@ const PatternDetail = () => {
                                 </ol>
                             ) : ""}
                             {item.explane_img_2 ? (
-                                <img src={require(`../../Sources/Img/${item.explane_img_2}`)} style={{maxWidth: "10%"}}></img>
+                                <img src={require(`../../Sources/Img/${item.explane_img_2}`)} style={{maxWidth: "20%"}}></img>
                             ) : ""}
                             {item.section3_title ? (<p>{item.section3_title}</p>) : ""}
                             {item.section3 ? (
@@ -69,7 +69,7 @@ const PatternDetail = () => {
                                 </ol>
                             ) : ""}
                             {item.explane_img_3 ? (
-                                <img src={require(`../../Sources/Img/${item.explane_img_3}`)} style={{maxWidth: "10%"}}></img>
+                                <img src={require(`../../Sources/Img/${item.explane_img_3}`)} style={{maxWidth: "20%"}}></img>
                             ) : ""}
                             {item.section4_title ? (<p>{item.section4_title}</p>) : ""}
                             {item.section4 ? (
@@ -80,7 +80,7 @@ const PatternDetail = () => {
                                 </ol>
                             ) : ""}
                             {item.explane_img_4 ? (
-                                <img src={require(`../../Sources/Img/${item.explane_img_4}`)} style={{maxWidth: "10%"}}></img>
+                                <img src={require(`../../Sources/Img/${item.explane_img_4}`)} style={{maxWidth: "20%"}}></img>
                             ) : ""}
                         </div>
                     ))
