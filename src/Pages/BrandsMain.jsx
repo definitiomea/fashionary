@@ -1,6 +1,30 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { useEffect, useState } from "react";
+import { Container, Row, Col, Dropdown, DropdownButton } from "react-bootstrap";
+import { Outlet, useNavigate } from "react-router-dom";
 
 const BrandsMain = () => {
+    const [brandscate, setBrandscate] = useState(null);
+    const navigate = useNavigate();
+
+    const getBrandscate = async () => {
+        let url = `http://localhost:5000/brands/`
+        let response = await fetch(url);
+        let data = await response.json();
+        setBrandscate(data);
+    }
+
+    useEffect(() => {
+        getBrandscate();
+    },[])
+
+    const dropToMove = () => {
+        const dropMove = [];
+        for(let i = 0; i < brandscate.length; i++) {
+            dropMove.push(<Dropdown.Item onClick={() => {navigate(`/brands/${brandscate[i].id}`)}}>{brandscate[i].category}</Dropdown.Item>);
+        }
+        return dropMove;
+    }
+
     return (
         <>
             <main>
@@ -13,7 +37,12 @@ const BrandsMain = () => {
                             <Row>
                                 <Col>
                                     <div className="outlet">
-                                        <h1>Brands Main here</h1>
+                                        <div className="dropcontain">
+                                            <DropdownButton id="dropdown-basic-button" title="Choose Brands Here">
+                                                {brandscate && dropToMove()}
+                                            </DropdownButton>
+                                        </div>
+                                        <Outlet></Outlet>
                                     </div>
                                 </Col>
                             </Row>

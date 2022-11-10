@@ -23,6 +23,7 @@ import CategoryDetail from './Pages/detailfolder/CategoryDetail';
 import SilhouetteDetail from './Pages/detailfolder/SilhouetteDetail';
 import PatternDetail from './Pages/detailfolder/PatternDetail';
 import FabricDetail from './Pages/detailfolder/FabricDetail';
+import BrandsDetail from './Pages/detailfolder/BrandsDetail';
 
 function App() {
   const [authenticate, setAuthenticate] = useState(false);
@@ -48,10 +49,10 @@ function App() {
             <Route path=':id' element={<CategoryDetail></CategoryDetail>}></Route>
           </Route>
           <Route path='brands' element={<BrandsMain></BrandsMain>}>
-
+            <Route path=':id' element={<BrandsDetail></BrandsDetail>}></Route>
           </Route>
           <Route path='personal' element={<PrivateColor authenticate={authenticate}></PrivateColor>}>
-            
+
           </Route>
         </Route>
       </Routes>
