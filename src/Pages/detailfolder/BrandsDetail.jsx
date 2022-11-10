@@ -39,7 +39,7 @@ const BrandsDetail = () => {
                         <div className="contents-article">
                             <h3>{item.section_title}</h3>
                             {item.section1 ? (
-                                <ol className="pat-section1">
+                                <ol className="section1">
                                     {item?.section1.map((list) => (
                                         <li>{item && list}</li>
                                     ))}
@@ -49,21 +49,21 @@ const BrandsDetail = () => {
                                 <img src={require(`../../Sources/Img/${item.section1_img}`)} style={{maxWidth: "100%"}}></img>
                             ) : ""}
                             {item.section2 ? (
-                                <ol className="pat-section2">
+                                <ol className="section2">
                                     {item?.section2.map((list) => (
                                         <li>{item && list}</li>
                                     ))}
                                 </ol>
                             ) : ""}
                             {item.section3 ? (
-                                <ol className="pat-section3">
+                                <ol className="section3">
                                     {item?.section3.map((list) => (
                                         <li>{item && list}</li>
                                     ))}
                                 </ol>
                             ) : ""}
                             {item.section4 ? (
-                                <ol className="pat-section4">
+                                <ol className="section4">
                                     {item?.section4.map((list) => (
                                         <li>{item && list}</li>
                                     ))}

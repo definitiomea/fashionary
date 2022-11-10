@@ -40,7 +40,7 @@ const FabricDetail = () => {
                             <h3>{item.section_title}</h3>
                             {item.section1_title ? (<p>{item.section1_title}</p>) : ""}
                             {item.section1 ? (
-                                <ol className="fab-section1">
+                                <ol className="section1">
                                     {item?.section1.map((list) => (
                                         <li>{item && list}</li>
                                     ))}
@@ -48,7 +48,7 @@ const FabricDetail = () => {
                             ) : ""}
                             {item.section2_title ? (<p>{item.section2_title}</p>) : ""}
                             {item.section2 ? (
-                                <ol className="fab-section2">
+                                <ol className="section2">
                                     {item?.section2.map((list) => (
                                         <li>{item && list}</li>
                                     ))}
@@ -56,7 +56,7 @@ const FabricDetail = () => {
                             ) : ""}
                             {item.section3_title ? (<p>{item.section3_title}</p>) : ""}
                             {item.section3 ? (
-                                <ol className="fab-section3">
+                                <ol className="section3">
                                     {item?.section3.map((list) => (
                                         <li>{item && list}</li>
                                     ))}
@@ -64,7 +64,7 @@ const FabricDetail = () => {
                             ) : ""}
                             {item.section4_title ? (<p>{item.section4_title}</p>) : ""}
                             {item.section4 ? (
-                                <ol className="fab-section4">
+                                <ol className="section4">
                                     {item?.section4.map((list) => (
                                         <li>{item && list}</li>
                                     ))}

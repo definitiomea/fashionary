@@ -293,15 +293,23 @@
     overflow: auto;
 }
 
-.cat-section1 {
+.section1 {
     list-style-type: none;
     padding-inline-start: 0px;
 }
-.cat-section2 {
+.section2 {
     list-style-type: none;
     padding-inline-start: 0px;
 }
-.cat-section3 {
+.section3 {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+.section4 {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+.section5 {
     list-style-type: none;
     padding-inline-start: 0px;
 }

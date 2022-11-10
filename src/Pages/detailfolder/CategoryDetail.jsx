@@ -35,42 +35,56 @@ const CategoryDetail = () => {
     return (
         <>
             <Slider {...settings}>
-                {/* {clothes && clothes?.including.map((item) => (
-                    <div>
-                        <div className="notice-type">
-                            <h3>{item && item.type}</h3>
+                {clothes ? (
+                    clothes?.including.map((item) => (
+                        <div className="contents-article">
+                            <h3>{item.type}</h3>
+                            {item.section1_title ? (<p>{item.section1_title}</p>) : ""}
+                            {item.section1 ? (
+                                <ol className="section1">
+                                    {item?.section1.map((list) => (
+                                        <li>{item && list}</li>
+                                    ))}
+                                </ol>
+                            ) : ""}
+                            {item.section2_title ? (<p>{item.section2_title}</p>) : ""}
+                            {item.section2 ? (
+                                <ol className="section2">
+                                    {item?.section2.map((list) => (
+                                        <li>{item && list}</li>
+                                    ))}
+                                </ol>
+                            ) : ""}
+                            {item.section3_title ? (<p>{item.section3_title}</p>) : ""}
+                            {item.section3 ? (
+                                <ol className="section3">
+                                    {item?.section3.map((list) => (
+                                        <li>{item && list}</li>
+                                    ))}
+                                </ol>
+                            ) : ""}
+                            {item.section4_title ? (<p>{item.section4_title}</p>) : ""}
+                            {item.section4 ? (
+                                <ol className="section4">
+                                    {item?.section4.map((list) => (
+                                        <li>{item && list}</li>
+                                    ))}
+                                </ol>
+                            ) : ""}
+                            {item.explane_img_1 ? (
+                                <img src={require(`../../Sources/Img/${item.explane_img_1}`)} style={{maxWidth: "100%"}}></img>
+                            ) : ""}
+                            {item.explane_img_2 ? (
+                                <img src={require(`../../Sources/Img/${item.explane_img_2}`)} style={{maxWidth: "100%"}}></img>
+                            ) : ""}
+                            {item.explane_img_3 ? (
+                                <img src={require(`../../Sources/Img/${item.explane_img_3}`)} style={{maxWidth: "100%"}}></img>
+                            ) : ""}
+                            {item.explane_img_4 ? (
+                                <img src={require(`../../Sources/Img/${item.explane_img_4}`)} style={{maxWidth: "100%"}}></img>
+                            ) : ""}
                         </div>
-                    </div>
-                ))} */}
-                {clothes && clothes?.including.map((item) => (
-                <div className="contents-article">
-                    <h3>{item && item.type}</h3>
-                    <p>{item && item.section1_title}</p>
-                    <ol className="cat-section1">
-                        {item?.section1.map((list) => (
-                            <li>{item && list}</li>
-                        ))}
-                    </ol>
-                    <p>{item && item.section2_title}</p>
-                    <ol className="cat-section2">
-                        {item?.section2.map((list) => (
-                            <li>{item && list}</li>
-                        ))}
-                    </ol>
-                    <p>{item && item.section3_title}</p>
-                    <ol className="cat-section3">
-                        {item?.section3.map((list) => (
-                            <li>{item && list}</li>
-                        ))}
-                    </ol>
-                    {item.section4 ? (
-                        <p>있음</p>
-                    ) : ""}
-                    {item.section5 ? (
-                        <p>있음</p>
-                    ) : ""}
-                </div>
-                ))}
+                ))) : ""}
             </Slider>
         </>
     );

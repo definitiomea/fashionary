@@ -38,7 +38,7 @@ const PatternMain = () => {
                                 <Col>
                                     <div className="outlet">
                                         <div className="dropcontain">
-                                            <DropdownButton id="dropdown-basic-button" title="Choose silhouette Here">
+                                            <DropdownButton id="dropdown-basic-button" title="Choose pattern Here">
                                                 {pattcate && dropToMove()}
                                             </DropdownButton>
                                         </div>

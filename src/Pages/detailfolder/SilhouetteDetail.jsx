@@ -46,7 +46,7 @@ const SilhouetteDetail = () => {
                     <h3>{shape.shape}</h3>
                     {item.checklist_title ? (<p>{item.checklist_title}</p>) : ""}
                     {item.checklist ? (
-                        <ol className="sil-section1">
+                        <ol className="section1">
                             {item?.checklist.map((list) => (
                                 <li>{item && list}</li>
                             ))}
@@ -54,7 +54,7 @@ const SilhouetteDetail = () => {
                     ) : ""}
                     {item.total_title ? (<p>{item.total_title}</p>) : ""}
                     {item.total ? (
-                        <ol className="sil-section2">
+                        <ol className="section2">
                             {item?.total.map((list) => (
                                 <li>{item && list}</li>
                             ))}
@@ -62,7 +62,7 @@ const SilhouetteDetail = () => {
                     ) : ""}
                     {item.top_title ? (<p>{item.top_title}</p>) : ""}
                     {item.top ? (
-                        <ol className="sil-section3">
+                        <ol className="section3">
                             {item?.top.map((list) => (
                                 <li>{item && list}</li>
                             ))}
@@ -70,16 +70,16 @@ const SilhouetteDetail = () => {
                     ) : ""}
                     {item.bottom_title ? (<p>{item.bottom_title}</p>) : ""}
                     {item.bottom ? (
-                        <ol className="sil-section4">
+                        <ol className="section4">
                             {item?.bottom.map((list) => (
                                 <li>{item && list}</li>
                             ))}
                         </ol>
                     ) : ""}
                     {item.solution ? (
-                        <ol className="sil-section5">
+                        <ol className="section5">
                             {item?.solution.map((list) => (
-                            <li>{item && list}</li>
+                            <li><p>{item && list}</p></li>
                             ))}
                         </ol>
                     ) : ""}
