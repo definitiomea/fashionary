@@ -22,6 +22,7 @@ import { PrivatePage, PrivateColor } from './Routes/PrivageRoutes';
 import CategoryDetail from './Pages/detailfolder/CategoryDetail';
 import SilhouetteDetail from './Pages/detailfolder/SilhouetteDetail';
 import PatternDetail from './Pages/detailfolder/PatternDetail';
+import FabricDetail from './Pages/detailfolder/FabricDetail';
 
 function App() {
   const [authenticate, setAuthenticate] = useState(false);
@@ -40,12 +41,18 @@ function App() {
           <Route path='pattern' element={<PatternMain></PatternMain>}>
             <Route path=':id' element={<PatternDetail></PatternDetail>}></Route>
           </Route>
-          <Route path='fabric' element={<FabricMain></FabricMain>}></Route>
+          <Route path='fabric' element={<FabricMain></FabricMain>}>
+            <Route path=':id' element={<FabricDetail></FabricDetail>}></Route>
+          </Route>
           <Route path='category' element={<CategoryMain></CategoryMain>}>
             <Route path=':id' element={<CategoryDetail></CategoryDetail>}></Route>
           </Route>
-          <Route path='brands' element={<BrandsMain></BrandsMain>}></Route>
-          <Route path='personal' element={<PrivateColor authenticate={authenticate}></PrivateColor>}></Route>
+          <Route path='brands' element={<BrandsMain></BrandsMain>}>
+
+          </Route>
+          <Route path='personal' element={<PrivateColor authenticate={authenticate}></PrivateColor>}>
+            
+          </Route>
         </Route>
       </Routes>
     </div>
