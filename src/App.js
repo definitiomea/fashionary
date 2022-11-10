@@ -21,6 +21,7 @@ import { PrivatePage, PrivateColor } from './Routes/PrivageRoutes';
 
 import CategoryDetail from './Pages/detailfolder/CategoryDetail';
 import SilhouetteDetail from './Pages/detailfolder/SilhouetteDetail';
+import PatternDetail from './Pages/detailfolder/PatternDetail';
 
 function App() {
   const [authenticate, setAuthenticate] = useState(false);
@@ -36,7 +37,9 @@ function App() {
           <Route path='silhouette' element={<SilhouetteMain></SilhouetteMain>}>
             <Route path=':id' element={<SilhouetteDetail></SilhouetteDetail>}></Route>
           </Route>
-          <Route path='pattern' element={<PatternMain></PatternMain>}></Route>
+          <Route path='pattern' element={<PatternMain></PatternMain>}>
+            <Route path=':id' element={<PatternDetail></PatternDetail>}></Route>
+          </Route>
           <Route path='fabric' element={<FabricMain></FabricMain>}></Route>
           <Route path='category' element={<CategoryMain></CategoryMain>}>
             <Route path=':id' element={<CategoryDetail></CategoryDetail>}></Route>
