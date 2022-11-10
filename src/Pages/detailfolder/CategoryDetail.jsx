@@ -5,7 +5,6 @@ import PrevArrow from "../../Modules/PrevArrow";
 import NextArrow from "../../Modules/NextArrow";
 
 import Slider from "react-slick";
-import { useCallback } from "react";
 
 const CategoryDetail = () => {
     let { id } = useParams();
