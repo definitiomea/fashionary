@@ -46,6 +46,9 @@ const BrandsDetail = () => {
                                     ))}
                                 </ol>
                             ) : ""}
+                            {/* {item.section1_image ? (
+                                <img src={require(`${item.section1_image}`)}></img>
+                            ) : ""} */}
                             {/* {item.section2_title ? (<p>{item.section2_title}</p>) : ""} */}
                             {item.section2 ? (
                                 <ol className="pat-section2">
