@@ -38,7 +38,6 @@ const BrandsDetail = () => {
                     brands.including.map((item) => (
                         <div className="contents-article">
                             <h3>{item.section_title}</h3>
-                            {/* {item.section1_title ? (<p>{item.section1_title}</p>) : ""} */}
                             {item.section1 ? (
                                 <ol className="pat-section1">
                                     {item?.section1.map((list) => (
@@ -46,10 +45,9 @@ const BrandsDetail = () => {
                                     ))}
                                 </ol>
                             ) : ""}
-                            {/* {item.section1_image ? (
-                                <img src={require(`${item.section1_image}`)}></img>
-                            ) : ""} */}
-                            {/* {item.section2_title ? (<p>{item.section2_title}</p>) : ""} */}
+                            {item.section1_img ? (
+                                <img src={require(`../../Sources/Img/${item.section1_img}`)} style={{maxWidth: "100%"}}></img>
+                            ) : ""}
                             {item.section2 ? (
                                 <ol className="pat-section2">
                                     {item?.section2.map((list) => (
@@ -57,7 +55,6 @@ const BrandsDetail = () => {
                                     ))}
                                 </ol>
                             ) : ""}
-                            {/* {item.section3_title ? (<p>{item.section3_title}</p>) : ""} */}
                             {item.section3 ? (
                                 <ol className="pat-section3">
                                     {item?.section3.map((list) => (
@@ -65,7 +62,6 @@ const BrandsDetail = () => {
                                     ))}
                                 </ol>
                             ) : ""}
-                            {/* {item.section4_title ? (<p>{item.section4_title}</p>) : ""} */}
                             {item.section4 ? (
                                 <ol className="pat-section4">
                                     {item?.section4.map((list) => (
