@@ -38,27 +38,33 @@
 }
 .header-img1 {
     height: 300px;
+    width: auto;
     margin-bottom: 5%;
     background-image: url(./Sources/Img/par22836-teaser-story-big.jpg);
     background-size: cover;
     background-position: center 32%;
     background-repeat: no-repeat;
+    max-width: 100%;
 }
 .header-img2 {
     height: 300px;
+    width: auto;
     margin-bottom: 5%;
     background-image: url(./Sources/Img/nyfwsketches-1567608885.jpg);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
+    max-width: 100%;
 }
 .header-img3 {
     height: 300px;
+    width: auto;
     margin-bottom: 5%;
     background-image: url(./Sources/Img/fashion-week-ss19-designer-sketches-1536174070.jpg);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
+    max-width: 100%;
 }
 .home-logo {
     display: flex;

@@ -29,6 +29,7 @@ const HeaderMade = () => {
     return (
         <>
             <header>
+                <div style={{overflow: "hidden"}}>
                 <Slider {...settings}>
                     <div className="header-img1"></div>
                     <div className="header-img2"></div>
@@ -42,6 +43,7 @@ const HeaderMade = () => {
                         </h1>
                     </div>
                 {/* </div> */}
+                </div>
             </header>
         </>
     );
