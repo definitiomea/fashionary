@@ -269,6 +269,17 @@
     font-family: myVogue;
     color: lightsalmon;
 }
+.persubvisual {
+    position: relative;
+    height: 300px;
+    margin-bottom: 5%;
+    background-image: url(./Sources/Img/colorful-ga6cc57917_1920.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: myVogue;
+    color: lightsalmon;
+}
 .visualsub {
     position: absolute;
     bottom: 5%;
@@ -313,6 +324,11 @@
 .section5 {
     list-style-type: none;
     padding-inline-start: 0px;
+}
+
+.percanvas {
+    display: flex;
+    justify-content: center;
 }
 
 .footer-container {
