@@ -1,26 +1,11 @@
 import { Container, Row, Col } from "react-bootstrap";
-import React from "react";
-import Sketch from "react-p5";
+import React, { useState } from "react";
+import ImageParser from "react-image-parser";
+
+import testImg from '../Sources/Img/192x192.png';
 
 const PersonalMain = () => {
-    let x = 50;
-    let y = 50;
-
-    let backgroundImg;
-
-    const setup = (p5, canvasParentRef) => {
-        p5.createCanvas(500, 500).parent(canvasParentRef);
-        p5.loadImage("../Sources/Img/192x192.png", img => {
-            p5.image(img, 0, 0);
-            p5.redraw();
-        });
-    }
-
-    const draw = (p5) => {
-        p5.background("transparent", "transparent", "transparent");
-        p5.ellipse(x, y, 70, 70);
-        x++;
-    }
+    const onImageParsed = ({data}) => console.log(data);
 
     return (
         <>
@@ -33,7 +18,7 @@ const PersonalMain = () => {
                         <Container>
                             <div className="outlet">
                                 <div className="percanvas">
-                                    <Sketch setup={setup} draw={draw} />
+                                    <ImageParser img={testImg} onImageParsed={onImageParsed}></ImageParser>
                                 </div>
                             </div>
                         </Container>

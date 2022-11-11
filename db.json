@@ -158,10 +158,10 @@
     "pattern": [
         {
             "id": "1",
-            "category": "1. 기하학적인 무늬",
+            "category": "기하학적인 무늬",
             "including" : [
                 {
-                    "section_title": "1. 기하학적인 무늬",
+                    "section_title": "기하학적인 무늬",
 
                     "section1_title": "(1) 도트(Dot)",
                     "section1": [
@@ -190,7 +190,7 @@
                     "explane_img_4": "pattern_pencil_stripe.jpg"
                 },
                 {
-                    "section_title": "1. 기하학적인 무늬",
+                    "section_title": "기하학적인 무늬",
 
                     "section1_title": "(5) 깅엄 체크(Gingham Check)",
                     "section1": [
@@ -220,7 +220,7 @@
                     "explane_img_4": "pattern_tartan.jpg"
                 },
                 {
-                    "section_title": "1. 기하학적인 무늬",
+                    "section_title": "기하학적인 무늬",
 
                     "section1_title": "(9) 도비 체크(Dobby Check)",
                     "section1": [
@@ -254,10 +254,10 @@
         },
         {
             "id": "2",
-            "category": "2. 복합적인 무늬",
+            "category": "복합적인 무늬",
             "including" : [
                 {
-                    "section_title": "2. 복합적인 무늬",
+                    "section_title": "복합적인 무늬",
 
                     "section1_title": "(1) 에스닉(Ethnic)",
                     "section1": [
@@ -286,7 +286,7 @@
                     "explane_img_4": "pattern_paisley.jpg"
                 },
                 {
-                    "section_title": "2. 복합적인 무늬",
+                    "section_title": "복합적인 무늬",
 
                     "section1_title": "(5) 트로피컬(Tropical)",
                     "section1": [
@@ -312,7 +312,7 @@
                     "explane_img_4": "pattern_fancy.jpg"
                 },
                 {
-                    "section_title": "2. 복합적인 무늬",
+                    "section_title": "복합적인 무늬",
 
                     "section1_title": "(9) 미채 모양(Camouflage)",
                     "section1": [
