@@ -363,7 +363,7 @@
 /* 마무리 하고 적용해주기 */
 @media screen and (max-width: 63rem) {
     .hide {
-        display: block;
+        display: inline-block;
     }
     .menu-list {
         display: none;
