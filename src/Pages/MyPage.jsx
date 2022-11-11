@@ -9,10 +9,22 @@ const MyPage = () => {
             <main>
                 <article>
                     <section>
+                        <div className="mysubvisual">
+                            <h1 className="visualsub">My Page</h1>
+                        </div>
                         <Container>
-                            <div className="outlet">
-                                <h1>MY PAGE HERE</h1>
-                            </div>
+                            <Row>
+                                <Col>
+                                    <div className="outlet">
+                                        <div className="contents-article">
+                                            <h3>any pages</h3>
+                                            <ol className="section1">
+                                                <li>any subpages</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </Col>
+                            </Row>
                         </Container>
                     </section>
                 </article>
