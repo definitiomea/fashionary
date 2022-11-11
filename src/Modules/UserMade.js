@@ -3,8 +3,14 @@ import { faMagnifyingGlass, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faHandshake } from '@fortawesome/free-regular-svg-icons'
 
 import { useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from "react-redux";
+
+import { logout } from "./ManageAccount";
 
 const UserMade = ({authenticate ,setAuthenticate}) => {
+    const accountlist = useSelector((state) => state.ManageAccount.accountlist);
+    const dispatch = useDispatch();
+
     const navigate = useNavigate();
 
     const goLogin = () => {
@@ -12,7 +18,7 @@ const UserMade = ({authenticate ,setAuthenticate}) => {
     }
 
     const goLogout = () => {
-        setAuthenticate(false);
+        dispatch(logout());
         navigate("/");
     }
 
@@ -42,15 +48,15 @@ const UserMade = ({authenticate ,setAuthenticate}) => {
                 </li>
 
                 {/* 두 메뉴는 각각 페이지로 보내주기, onClick */}
-                {authenticate == true ?
+                {accountlist[0].logined == true ?
                 <li className='logout' key="logout" onClick={goLogout}>
                 <FontAwesomeIcon icon={faUser}></FontAwesomeIcon> LOGOUT</li> :
                 <li className='login' key="login" onClick={goLogin}>
                 <FontAwesomeIcon icon={faUser}></FontAwesomeIcon> LOGIN</li>                            
                 }
-                {authenticate == true ?
+                {accountlist[0].logined == true ?
                 <li className='signup' key="signup" onClick={goMyPage}>
-                <FontAwesomeIcon icon={faHandshake}></FontAwesomeIcon> MY PAGE</li> :
+                <FontAwesomeIcon icon={faHandshake}></FontAwesomeIcon> MY PAGE OF {accountlist[0].id}</li> :
                 <li className='signup' key="signup" onClick={goSignup}>
                 <FontAwesomeIcon icon={faHandshake}></FontAwesomeIcon> SIGN UP</li>
                 }

@@ -6,8 +6,8 @@ export const ManageAccount = createSlice({
         accountlist: [
             {
                 number: 1,
-                id: "1111",
-                password: "1111",
+                id: "aaaa",
+                password: "aaaa",
                 logined: false
             }
         ]
@@ -19,6 +19,8 @@ export const ManageAccount = createSlice({
                 password: action.payload.password
             }
             if(state.accountlist[0].id == tempAccount.id && state.accountlist[0].password == tempAccount.password) {
+                state.accountlist[0].logined = true;
+                console.log(state.accountlist[0].logined);
                 console.log("logined");
             }
             else {
