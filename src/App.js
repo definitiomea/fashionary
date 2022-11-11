@@ -48,9 +48,9 @@ function App() {
           <Route path='category' element={<CategoryMain></CategoryMain>}>
             <Route path=':id' element={<CategoryDetail></CategoryDetail>}></Route>
           </Route>
-          <Route path='brands' element={<BrandsMain></BrandsMain>}>
+          {/* <Route path='brands' element={<BrandsMain></BrandsMain>}>
             <Route path=':id' element={<BrandsDetail></BrandsDetail>}></Route>
-          </Route>
+          </Route> */}
           <Route path='personal' element={<PrivateColor authenticate={authenticate}></PrivateColor>}>
 
           </Route>

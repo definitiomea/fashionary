@@ -118,6 +118,9 @@
     color: white;
 }
 .index-btn {
+    display: inline-block;
+    padding: 15px;
+    cursor: pointer;
     border: none;
     background-color: transparent;
     font-family: myLemonMilk;
@@ -192,6 +195,9 @@
 
 .home-intro {
     font-family: myCoco;
+}
+.card-area {
+    font-family: myNanumSquareNeoBold;
 }
 .outlet {
     font-family: myLemonMilk, myNanumSquareNeoBold;

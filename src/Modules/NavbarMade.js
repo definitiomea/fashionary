@@ -18,7 +18,7 @@ const NavbarMade = ({authenticate, setAuthenticate}) => {
         pattern: "Pattern",
         fabric: "Fabric",
         category: "Category of Clothes",
-        brands: "Brands",
+        /* brands: "Brands", */
         personal: "Personal Color"
     }
 
@@ -52,9 +52,9 @@ const NavbarMade = ({authenticate, setAuthenticate}) => {
                 <ul className='menu-list'>
                     {horizonMenu()}
                 </ul>
-                <button className='index-btn hide' onClick={() => {setWidth("100%")}}>
+                <h4 className='index-btn hide' onClick={() => {setWidth("100%")}}>
                     <FontAwesomeIcon icon={faBook}></FontAwesomeIcon> INDEX
-                </button>
+                </h4>
             </div>
         </>
     );
