@@ -19,16 +19,11 @@ const Login = (/* {setAuthenticate} */) => {
 
     const navigate = useNavigate();
 
-    /* const loginUser = (e) => {
-        e.preventDefault();
-        setAuthenticate(true);
-        navigate("/");
-    } */
-
     const loginUser = useCallback((e) => {
         e.preventDefault();
-        dispatch(login({id: id, password: password}));
-    }, [dispatch, id, password]);
+        dispatch(login({id: id, password: password}))
+        navigate("/");
+    });
 
     return (
         <Container>

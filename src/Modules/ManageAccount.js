@@ -1,15 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-import { Navigate } from 'react-router-dom';
-
 export const ManageAccount = createSlice({
     name: 'ManageAccount',
     initialState: {
         accountlist: [
             {
                 number: 1,
-                id: "1234",
-                password: "1234",
+                id: "1111",
+                password: "1111",
                 logined: false
             }
         ]
@@ -20,17 +18,15 @@ export const ManageAccount = createSlice({
                 id: action.payload.id,
                 password: action.payload.password
             }
-            if(state.id == tempAccount.id && state.password == tempAccount.password) {
-                state.logined = true;
+            if(state.accountlist[0].id == tempAccount.id && state.accountlist[0].password == tempAccount.password) {
                 console.log("logined");
-                <Navigate to="/"></Navigate>
             }
             else {
                 alert("다시 확인해주세요");
             }
         },
         logout: (state) => {
-            state.logined = false;
+            state.accountlist[0].logined = false;
         }
     }
 });
