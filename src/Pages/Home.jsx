@@ -9,6 +9,9 @@ import Slider from "react-slick";
 import { Container, Row, Col } from "react-bootstrap";
 
 import SilhouetteCard from '../Modules/SilhouetteCard';
+import PatternCard from '../Modules/PatternCard';
+import FabricCard from '../Modules/FabricCard';
+import CategoryCard from '../Modules/CategoryCard';
 
 const Home = () => {
     const settings = {
@@ -35,10 +38,9 @@ const Home = () => {
                                     <div className="card-area">
                                         <Slider {...settings}>
                                             <SilhouetteCard></SilhouetteCard>
-                                            <SilhouetteCard></SilhouetteCard>
-                                            <SilhouetteCard></SilhouetteCard>
-                                            <SilhouetteCard></SilhouetteCard>
-                                            <SilhouetteCard></SilhouetteCard>
+                                            <PatternCard></PatternCard>
+                                            <FabricCard></FabricCard>
+                                            <CategoryCard></CategoryCard>
                                         </Slider>
                                     </div>
                                 </Col>

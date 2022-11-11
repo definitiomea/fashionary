@@ -119,7 +119,7 @@
 }
 .index-btn {
     display: inline-block;
-    padding: 15px;
+    padding: 10px;
     cursor: pointer;
     border: none;
     background-color: transparent;
@@ -173,16 +173,6 @@
     border: 0px;
 }
 
-/* 마무리 하고 적용해주기 */
-@media screen and (max-width: 63rem) {
-    .hide {
-        display: block;
-    }
-    .menu-list {
-        display: none;
-    }
-}
-
 .menubox {
     text-decoration: none;
     color:black;
@@ -198,6 +188,11 @@
 }
 .card-area {
     font-family: myNanumSquareNeoBold;
+    margin: 0 10px;
+}
+.card-indivi {
+    width: 18rem;
+    margin: 0px auto;
 }
 .outlet {
     font-family: myLemonMilk, myNanumSquareNeoBold;
@@ -363,4 +358,18 @@
 }
 .copyright {
     font-family: myNanumSquareNeoRegular;
+}
+
+/* 마무리 하고 적용해주기 */
+@media screen and (max-width: 63rem) {
+    .hide {
+        display: block;
+    }
+    .menu-list {
+        display: none;
+    }
+    .card-indivi {
+        width: 12rem;
+        margin: 0px auto;
+    }
 }
