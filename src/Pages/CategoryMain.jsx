@@ -44,7 +44,7 @@ const CategoryMain = () => {
                         </div>
                         <Container>
                             <Row>
-                                <Col>
+                                <Col lg={9} style={{margin: "0px auto"}}>
                                     <div className="outlet">
                                         <div className="dropcontain">
                                             <DropdownButton id="dropdown-basic-button" title="Choose Category Here">

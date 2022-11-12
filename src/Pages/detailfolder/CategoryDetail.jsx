@@ -72,16 +72,16 @@ const CategoryDetail = () => {
                                 </ol>
                             ) : ""}
                             {item.explane_img_1 ? (
-                                <img src={require(`../../Sources/Img/${item.explane_img_1}`)} style={{maxWidth: "100%"}}></img>
+                                <img src={require(`../../Sources/Img/${item.explane_img_1}`)} className="cat-imgs"></img>
                             ) : ""}
                             {item.explane_img_2 ? (
-                                <img src={require(`../../Sources/Img/${item.explane_img_2}`)} style={{maxWidth: "100%"}}></img>
+                                <img src={require(`../../Sources/Img/${item.explane_img_2}`)} className="cat-imgs"></img>
                             ) : ""}
                             {item.explane_img_3 ? (
-                                <img src={require(`../../Sources/Img/${item.explane_img_3}`)} style={{maxWidth: "100%"}}></img>
+                                <img src={require(`../../Sources/Img/${item.explane_img_3}`)} className="cat-imgs"></img>
                             ) : ""}
                             {item.explane_img_4 ? (
-                                <img src={require(`../../Sources/Img/${item.explane_img_4}`)} style={{maxWidth: "100%"}}></img>
+                                <img src={require(`../../Sources/Img/${item.explane_img_4}`)} className="cat-imgs"></img>
                             ) : ""}
                         </div>
                 ))) : ""}

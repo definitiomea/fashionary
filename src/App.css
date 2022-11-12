@@ -337,6 +337,10 @@
     padding-inline-start: 0px;
 }
 
+.cat-imgs {
+    max-width: 100%;
+}
+
 .percanvas {
     display: flex;
     justify-content: center;
@@ -400,3 +404,9 @@
         margin: 0px auto;
     }
 }
+
+/* @media screen and (min-width: 63rem) {
+    .cat-imgs {
+        max-width: 80%;
+    }
+} */
