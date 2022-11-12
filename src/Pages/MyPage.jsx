@@ -1,8 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { useSelector } from "react-redux";
+import TestMemberCard from "../Modules/TestMemberCard";
 
 const MyPage = () => {
-    const accountlist = useSelector((state) => state.ManageAccount.accountlist);
 
     return (
         <>
@@ -14,13 +13,12 @@ const MyPage = () => {
                         </div>
                         <Container>
                             <Row>
-                                <Col>
+                                <Col lg={9} style={{margin: "0px auto"}}>
                                     <div className="outlet">
-                                        <div className="contents-article">
-                                            <h3>any pages</h3>
-                                            <ol className="section1">
-                                                <li>any subpages</li>
-                                            </ol>
+                                        <div>
+                                            <h3>내 정보</h3>
+                                            <hr></hr>
+                                            <TestMemberCard></TestMemberCard>
                                         </div>
                                     </div>
                                 </Col>
