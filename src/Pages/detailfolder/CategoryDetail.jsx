@@ -27,7 +27,6 @@ const CategoryDetail = () => {
             let response = await fetch(url);
             let data = await response.json();
             setClothes(data);
-            console.log(clothes);
         }
         getClothes();
     },[id]);
