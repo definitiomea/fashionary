@@ -12,7 +12,7 @@ function TestMemberCard() {
         <Card className='card-indivi'>
         <Card.Img variant="top" src={require(`../Sources/Img/vector-fabric-swatches.jpg`)} />
         <Card.Body>
-            <Card.Title>{accountlist[0].id}</Card.Title>
+            <Card.Title>{accountlist[0].nickname}</Card.Title>
             <Card.Text>
             가입일: {date.getFullYear()}/{date.getMonth() + 1}/{date.getDate()}
             </Card.Text>

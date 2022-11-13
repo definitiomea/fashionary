@@ -8,6 +8,7 @@ export const ManageAccount = createSlice({
                 number: 1,
                 id: "aaaa",
                 password: "aaaa",
+                nickname: "테스트유저",
                 logined: false
                 /* admin: true */
             }

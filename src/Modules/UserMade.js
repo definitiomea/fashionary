@@ -56,7 +56,7 @@ const UserMade = ({authenticate ,setAuthenticate}) => {
                 }
                 {accountlist[0].logined == true ?
                 <li className='signup' key="signup" onClick={goMyPage}>
-                <FontAwesomeIcon icon={faHandshake}></FontAwesomeIcon> MY PAGE OF {accountlist[0].id}</li> :
+                <FontAwesomeIcon icon={faHandshake}></FontAwesomeIcon> MY PAGE OF {accountlist[0].nickname}</li> :
                 <li className='signup' key="signup" onClick={goSignup}>
                 <FontAwesomeIcon icon={faHandshake}></FontAwesomeIcon> SIGN UP</li>
                 }
