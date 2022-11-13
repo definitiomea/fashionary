@@ -197,6 +197,11 @@
 .outlet {
     font-family: myLemonMilk, myNanumSquareNeoBold;
 }
+.signup-form {
+    font-family: myNanumSquareNeoBold;
+    margin: 6%;
+}
+
 .mysubvisual {
     position: relative;
     height: 300px;
