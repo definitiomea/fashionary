@@ -38,7 +38,7 @@ const SilhouetteMain = () => {
                                 <Col lg={9} style={{margin: "0px auto"}}>
                                     <div className="outlet">
                                         <div className="dropcontain">
-                                            <DropdownButton id="dropdown-basic-button" title="Choose silhouette Here">
+                                            <DropdownButton variant="outline-secondary" title="Choose silhouette Here">
                                                 {silhouette && dropToMove()}
                                             </DropdownButton>
                                         </div>

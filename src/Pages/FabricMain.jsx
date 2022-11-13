@@ -38,7 +38,7 @@ const FabricMain = () => {
                                 <Col lg={9} style={{margin: "0px auto"}}>
                                     <div className="outlet">
                                         <div className="dropcontain">
-                                            <DropdownButton id="dropdown-basic-button" title="Choose Fabric Here">
+                                            <DropdownButton variant="outline-secondary" title="Choose Fabric Here">
                                                 {fabcate && dropToMove()}
                                             </DropdownButton>
                                         </div>

@@ -17,7 +17,7 @@ function CategoryCard() {
         <ListGroup.Item>New Updated</ListGroup.Item>
       </ListGroup>
       <Card.Body>
-        <Link to={"/category"} style={{textDecoration: "none", color: "coral"}}>확인해보기</Link>
+        <Link to={"/category/1"} style={{textDecoration: "none", color: "coral"}}>확인해보기</Link>
       </Card.Body>
     </Card>
   );
