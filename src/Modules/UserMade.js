@@ -60,6 +60,9 @@ const UserMade = ({authenticate ,setAuthenticate}) => {
                 <li className='signup' key="signup" onClick={goSignup}>
                 <FontAwesomeIcon icon={faHandshake}></FontAwesomeIcon> SIGN UP</li>
                 }
+                {/* {accountlist[0].admin == true ? (
+
+                ) : ""} */}
             </ul>
         </>
     );

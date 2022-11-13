@@ -1,7 +1,9 @@
 import { Container, Row, Col } from "react-bootstrap";
+import { useSelector } from "react-redux";
 import TestMemberCard from "../Modules/TestMemberCard";
 
 const MyPage = () => {
+    const accountlist = useSelector((state) => state.ManageAccount.accountlist);
 
     return (
         <>

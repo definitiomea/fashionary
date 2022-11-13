@@ -8,6 +8,7 @@ const PersonalMain = () => {
 
     const setup = (p5, canvasParentRef) => {
 		p5.createCanvas(500, 500).parent(canvasParentRef);
+        console.log(p5);
 	};
 
     const draw = (p5) => {
