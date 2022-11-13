@@ -23,7 +23,7 @@ const BrandsDetail = () => {
 
     useEffect(() => {
         const getBrands = async () => {
-            let url = `http://localhost:5000/brands/${id}`
+            let url = `http://localhost:5000/brands/${id}`;
             let response = await fetch(url);
             let data = await response.json();
             setBrands(data);
