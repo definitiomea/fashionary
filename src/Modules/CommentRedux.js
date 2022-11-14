@@ -20,6 +20,14 @@ export const CommentRedux = createSlice({
         },
         deletereply: (state, action) => {
             const delReply = state.replylist.filter((reply) => reply.index !== action.index);
+            return {
+                ...state, replylist: delReply
+            }
         }
     }
 });
+
+export const { addreply, deletereply } = CommentRedux.actions;
+
+export default CommentRedux.reducer;
+
